@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'knowledge',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -202,3 +203,5 @@ LOGGING = {
         },
     },
 }
+
+LOGIN_REDIRECT_URL = '/knowledge/'  #登录后重定向

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}knowledge details{% endblock %}
+{% block content %}
+    {#    知识点标题#}
+    <div class="row text-center verticle-middle-sm">
+        <h1>{{ knows.title }}</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <p class="text-center">
+                <span>
+                    {{ knows.author.username }}
+                </span>
+                <span>
+                    {{ knows.created_date }}
+                </span>
+            </p>
+            <div>
+                {{ knows.body }}
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-md-4">
+            广告
+        </div>
+    </div>
+
+{% endblock %}
